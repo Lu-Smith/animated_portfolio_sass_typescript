@@ -4,9 +4,11 @@ import './styles/app.scss';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-     Hello World
-      </header>
+      <section>Hero</section>
+      <section>Parallax</section>
+      <section>Art Projects</section>
+      <section>Parallax</section>
+      <section>Contact</section>
     </div>
   );
 }
