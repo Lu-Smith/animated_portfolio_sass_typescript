@@ -1,0 +1,13 @@
+.NavBar {
+  height: 100px;
+}
+.NavBar .wrapper {
+  max-width: 1366px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.NavBar .wrapper span {
+  font-weight: bold;
+}/*# sourceMappingURL=navbar.css.map */
