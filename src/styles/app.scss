@@ -1,6 +1,7 @@
 @import './_variables.scss';
 @import './mixins';
 @import './navbar.scss';
+@import './sidebar.scss';
 
 html {
     scroll-snap-type: y mandatory;
