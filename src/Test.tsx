@@ -6,8 +6,8 @@ const Test = () => {
     <div className='course'>
         <motion.div 
         className="box" 
-        initial={{opacity: 1, scale: 0.5}}
-        animate={{opacity: 0}} 
+        initial={{opacity: 0, scale: 0.5}}
+        animate={{opacity: 1 , scale: 1, x: 200, y: 300}} 
         transition={{duration: 2, delay: 2}}>
 
         </motion.div>
