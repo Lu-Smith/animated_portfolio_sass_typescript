@@ -14,6 +14,7 @@ function App() {
       <section>Parallax</section>
       <section>Contact</section> */}
       <Test />
+      <Test />
     </div>
   );
 }
