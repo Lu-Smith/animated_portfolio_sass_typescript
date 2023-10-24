@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 import {
     FaInstagram,
@@ -13,7 +14,11 @@ const NavBar = () => {
     <div className='NavBar'>
         {/* {SideBar} */}
         <div className='wrapper'>
-            <span>Luna Smith</span>
+            <motion.span
+            initial={{opacity: 0, scale: 0.5}}
+            animate={{opacity: 1, scale: 1}}>
+                Luna Smith
+            </motion.span>
             <div className="social">
                 <a  href="//www.instagram.com/lunasmithart/"
                     target="_blank"

@@ -2,7 +2,6 @@ import React from 'react';
 import './styles/app.scss';
 import NavBar from './components/NavBar';
 
-
 function App() {
   return (
     <div className="App">
