@@ -1,23 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 
-const variants = {
-    visible: { opacity: 1},
-    hidden: { opacity: 0},
-}
-
 const Test = () => {
-  return (
-    <div className='course'>
-        <motion.div 
-        className="box" 
-        variants={variants}
-        initial='hidden'
-        animate='visible'
-        transition={{duration: 2, delay: 2}}>
-        </motion.div>
-    </div>
-  )
+    const [open, setOpen] = useState(false);
+
+    const variants = {
+        visible: { opacity: 1},
+        hidden: { opacity: 0},
+    }
+
+    return (
+        <div className='course'>
+            <motion.div 
+            className="box" 
+            variants={variants}
+            transition={{duration: 2, delay: 2}}
+            animate={open ? 'visible' : 'hidden'}>
+            </motion.div>
+            <button onClick={() => setOpen(prev=>!prev)}>Click</button>
+        </div>
+    )
 }
 
 export default Test
