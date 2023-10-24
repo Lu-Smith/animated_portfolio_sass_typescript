@@ -19,16 +19,6 @@ a {
     color: inherit;
 }
 
-.course {
-    height: 100vh;
-    @include flex(center, column);
-
-    .box {
-        width: 200px;
-        height: 200px;
-        background-color: $primary-background;
-    }
-}
 
 
 
