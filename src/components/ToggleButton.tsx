@@ -1,10 +1,11 @@
 import React from 'react'
 
 interface ButtonProps {
-  setOpen: React.Dispatch<React.SetStateAction<boolean>>,
+  setOpen: any,
 }
 
 const ToggleButton = ({setOpen}: ButtonProps) => {
+  console.log(setOpen)
   return (
     <div>
       <button onClick={() => setOpen((prev: boolean) => !prev)}>
