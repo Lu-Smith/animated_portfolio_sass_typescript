@@ -1,6 +1,6 @@
 import React from 'react';
 import Links from './Links';
-import ToogleButton from './ToogleButton';
+import ToggleButton from './ToggleButton';
 
 const SideBar = () => {
   return (
@@ -8,7 +8,7 @@ const SideBar = () => {
         <div className="container">
             <Links />
         </div>
-        <ToogleButton />
+        <ToggleButton />
     </div>
   )
 }
