@@ -1,18 +1,18 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-
 import {
     FaInstagram,
     FaLinkedin,
     FaFacebook,
     FaTwitter,
     FaYoutube,
-  } from "react-icons/fa";
+} from "react-icons/fa";
+import SideBar from './SideBar';
 
 const NavBar = () => {
   return (
     <div className='NavBar'>
-        {/* {SideBar} */}
+        <SideBar />
         <div className='wrapper'>
             <motion.span
             initial={{opacity: 0, scale: 0.5}}
