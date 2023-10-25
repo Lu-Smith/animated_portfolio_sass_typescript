@@ -1,0 +1,5 @@
+.SideBar {
+    @include flex(center, column);
+    background-color: $secondary-background;
+    color: $secondary-color;
+}
