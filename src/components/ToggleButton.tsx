@@ -1,15 +1,19 @@
-import React from 'react'
+import React from 'react';
 
-const ToggleButton = () => {
+interface ButtonProps {
+  setOpen: boolean; // setOpen is a boolean
+}
+
+const ToggleButton = ({ setOpen }: ButtonProps) => {
   return (
     <div>
-      <button>
+      <button onClick={() => setOpen = !setOpen}>
         <span></span>
         <span></span>
         <span></span>
       </button>
     </div>
-  )
+  );
 }
 
-export default ToggleButton
+export default ToggleButton;
