@@ -5,7 +5,7 @@ interface ButtonProps {
 }
 
 const ToggleButton = ({setOpen}: ButtonProps) => {
-  console.log(setOpen)
+  
   return (
     <div>
       <button onClick={() => setOpen((prev: boolean) => !prev)}>

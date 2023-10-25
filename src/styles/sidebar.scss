@@ -7,27 +7,10 @@
         position: fixed;
         top: 0;
         left: 0;
-        width: 300px;
+        bottom: 0;
+        width: 400px;
         background-color: $secondary-background;
 
-        button {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            background-color: transparent;
-            border: none;
-            @include flex(center, column);
-            gap: 2px;
-            cursor: pointer;
-
-            span {
-                background-color: $primary-background;
-                width: 20px;
-                height: 4px;
-                border-radius: 5%;
-            }
-        }
-    
         .Links {
             position: absolute;
             width: 100%;
@@ -38,6 +21,27 @@
             a {
                 font-size: 35px;
             }
+        }
+    }
+
+    button {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: transparent;
+        border: none;
+        @include flex(center, column);
+        gap: 2px;
+        cursor: pointer;
+
+        span {
+            background-color: $primary-background;
+            width: 20px;
+            height: 4px;
+            border-radius: 5%;
         }
     }
 }
