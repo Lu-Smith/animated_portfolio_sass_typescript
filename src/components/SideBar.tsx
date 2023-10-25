@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 import Links from './Links';
 import ToggleButton from './ToggleButton';
 
@@ -11,13 +12,13 @@ const SideBar = () => {
     //     closed:,
     // }
   return (
-    <div className='SideBar'>
-        <div className="container">
+    <motion.div className='SideBar'>
+        <motion.div className="container">
             <Links />
-            <ToggleButton setOpen={setOpen} />
-        </div>
+            <ToggleButton setOpen={open} />
+        </motion.div>
         
-    </div>
+    </motion.div>
   )
 }
 
