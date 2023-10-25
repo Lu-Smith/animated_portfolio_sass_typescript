@@ -7,15 +7,33 @@ const SideBar = () => {
 
     const [open, setOpen] = useState(false);
 
-    // const variants = {
-    //     open:,
-    //     closed:,
-    // }
+    const variants = {
+        open: {
+            clipPath: 'circle(1200px at 50px 50px)',
+            transition: {
+                type: 'spring',
+                stiffnes: 20,
+            }
+        },
+        closed: {
+            clipPath: 'circle(30px at 50px 50px',
+            transition: {
+                delay: 0.5,
+                type: 'spring', 
+                stiffnes: 400,
+                damping: 40,
+            }
+        },
+    }
   return (
-    <motion.div className='SideBar'>
-        <motion.div className="container">
+    <motion.div 
+    className='SideBar'
+    animate={open ? 'open' : 'closed'}>
+        <motion.div 
+        className="container"
+        variants={variants}>
             <Links />
-            <ToggleButton setOpen={open} />
+            <ToggleButton setOpen={setOpen} />
         </motion.div>
         
     </motion.div>
