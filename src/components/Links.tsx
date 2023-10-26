@@ -6,7 +6,7 @@ const Links = () => {
   return (
     <div className='Links'>
       {items.map((item, index) => {
-        return <a key={index}>{item}</a>
+        return <a key={index} href={`#${item}`}>{item}</a>
       })}
     </div>
   )
