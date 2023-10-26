@@ -1,12 +1,14 @@
 import React from 'react';
 import './styles/app.scss';
 import NavBar from './components/NavBar';
+import Hero from './components/Hero';
 
 function App() {
   return (
     <div className="App">
       <section id='Home'>
         <NavBar />
+        <Hero />
       </section>
       <section id='Projects'>Parallax</section>
       <section>Projects</section>

@@ -1,3 +1,4 @@
 .Hero {
-    background-color: $secondary-background;
+    height: calc(100vh - 100px);
+    background: $standardSection-background;
 }
