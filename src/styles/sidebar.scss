@@ -19,7 +19,11 @@
             gap: 20px;
     
             a {
-                font-size: 35px;
+                font-size: 30px;
+
+                &:hover {
+                    color: red;
+                }
             }
         }
     }
@@ -33,16 +37,10 @@
         border-radius: 50%;
         background-color: transparent;
         border: none;
-        @include flex(center, column);
-        gap: 2px;
+        // @include flex(center, column);
+        // gap: 2px;
         cursor: pointer;
 
-        span {
-            background-color: $primary-background;
-            width: 20px;
-            height: 4px;
-            border-radius: 5%;
-        }
     }
 }
 
