@@ -4,6 +4,32 @@
     overflow: hidden;
     position: relative;
 
+    .wrapper {
+        max-width: 1366px;
+        height: 100%;
+        margin: auto;
+
+        .textContainer {
+            height: 100%;
+            @include flex(center, column);
+            gap: 40px;
+
+            h2 {
+                font-size: 30px;
+                letter-spacing: 10px;
+                color: $standard-color;
+            }
+
+            img {
+                width: 50px;
+            }
+        }
+
+
+
+
+    }
+
     .imageContainer {
         height: 100%;
         position: absolute;
