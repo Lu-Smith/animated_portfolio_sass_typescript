@@ -5,13 +5,17 @@ import NavBar from './components/NavBar';
 function App() {
   return (
     <div className="App">
-      <section>
+      <section id='Home'>
         <NavBar />
       </section>
-      <section>Parallax</section>
-      <section>Art Projects</section>
-      <section>Parallax</section>
-      <section>Contact</section>
+      <section id='Projects'>Parallax</section>
+      <section>Projects</section>
+      <section id='Portfolio'>Parallax</section>
+      <section >Portfolio</section>
+      <section id='About'>Parallax</section>
+      <section >About</section>
+      <section id='Contact'>Parallax</section>
+      <section >Contact</section>
     </div>
   );
 }

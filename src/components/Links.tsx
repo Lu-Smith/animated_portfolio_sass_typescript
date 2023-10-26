@@ -1,5 +1,4 @@
 import React from 'react';
-import { NavLink } from 'react-dom';
 
 const Links = () => {
 
@@ -7,7 +6,7 @@ const Links = () => {
   return (
     <div className='Links'>
       {items.map((item, index) => {
-        return <NavLink key={index}>{item}</NavLink>
+        return <a key={index}>{item}</a>
       })}
     </div>
   )
