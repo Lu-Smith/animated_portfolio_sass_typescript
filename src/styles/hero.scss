@@ -1,4 +1,13 @@
 .Hero {
     height: calc(100vh - 100px);
     background: $standardSection-background;
+    overflow: hidden;
+    position: relative;
+
+    .imageContainer {
+        height: 100%;
+        position: absolute;
+        top: 5%;
+        right: 15%;
+    }
 }
