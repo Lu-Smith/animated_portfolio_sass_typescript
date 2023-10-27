@@ -17,11 +17,14 @@ const Hero = () => {
                 <img src={Scroll} alt="scroll" />
             </div>
         </div>
+        <div className="slidingTextContainer">
+            Creator of code-based masterpieces and fine art.
+        </div>
         <div className="imageContainer">
             <img src={Witch} alt="Little Witch" />
         </div>
     </div>
-  )
+  ) 
 }
 
 export default Hero
