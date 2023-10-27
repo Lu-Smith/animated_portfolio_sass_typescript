@@ -26,6 +26,19 @@ const textVariants = {
     }
 }
 
+const sliderVariants = {
+    initial: {
+        x: 0,
+    },
+    animate: {
+        x: "-220%",
+        transition: {
+            duration: 40,
+            repeat: Infinity,
+        }
+    },
+}
+
 
 const Hero = () => {
   return (
@@ -49,9 +62,13 @@ const Hero = () => {
                 alt="scroll" />
             </motion.div>
         </div>
-        <div className="slidingTextContainer">
+        <motion.div 
+        className="slidingTextContainer" 
+        variants={sliderVariants}
+        initial="initial"
+        animate="animate">
             Creator of code-based masterpieces and fine art.
-        </div>
+        </motion.div>
         <div className="imageContainer">
             <img src={Witch} alt="Little Witch" />
         </div>
