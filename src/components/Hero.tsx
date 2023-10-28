@@ -22,6 +22,7 @@ const textVariants = {
         transition: {
             duration: 2,
             repeat: Infinity,
+     
         }
     }
 }
@@ -33,8 +34,8 @@ const sliderVariants = {
     animate: {
         x: "-220%",
         transition: {
-            duration: 40,
-            repeat: Infinity,
+            duration: 30,
+            repeat: Infinity,                
         }
     },
 }
