@@ -2,7 +2,7 @@ import React from 'react'
 
 const Parallax = () => {
   return (
-    <div>Parallax</div>
+    <div className='Parallax'>Parallax</div>
   )
 }
 
