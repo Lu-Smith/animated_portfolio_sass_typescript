@@ -1,8 +1,20 @@
-import React from 'react'
+import React from 'react';
 
-const Parallax = () => {
+interface ParallaxType {
+    type: string,
+}
+
+const Parallax = ({ type }: ParallaxType) => {
   return (
-    <div className='Parallax'>Parallax</div>
+    <div 
+    className='Parallax' 
+    style={{background: type === 'projects' ? 
+    '$standardSection-background ': '$parallaxSection-background'}}>
+        <h1>{type === 'projects' ? 'What I Do?' : 'What I Did?'}</h1>
+        <div className="mountains"></div>
+        <div className="planets"></div>
+        <div className="stars"></div>
+    </div>
   )
 }
 
