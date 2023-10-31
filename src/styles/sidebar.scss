@@ -4,6 +4,7 @@
     color: $secondary-color;
 
     .container {
+        z-index: 997;
         position: fixed;
         top: 0;
         left: 0;
@@ -12,6 +13,7 @@
         background-color: $secondary-background;
 
         .Links {
+            z-index: 998;
             position: absolute;
             width: 100%;
             height: 100%;
@@ -29,6 +31,7 @@
     }
 
     button {
+        z-index: 999;
         position: fixed;
         top: 0;
         left: 0;
