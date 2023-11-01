@@ -20,18 +20,25 @@
     }
 
     .planets {
-        background-image: $primary-backgroundImage; 
+        background-image: url('../assets/planets.png');
         background-size: cover;
         background-position: bottom;
         width: 100%;
         height: 100%;
         position: absolute;
         z-index: 2;
-        
-        @if type == 'projects' {
-          background-image: $secondary-backgroundImage;
-        }
-      }
+    }
+
+    .sun {
+        background-image: url('../assets/sun.png');
+        background-size: cover;
+        background-position: bottom;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 2;
+    }
+
     .stars {
         background-image: url('../assets/stars.png');
         background-size: cover;
