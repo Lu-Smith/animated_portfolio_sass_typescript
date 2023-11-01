@@ -43,7 +43,7 @@ const Parallax = ({ type }: ParallaxType) => {
       <motion.div className="mountains"></motion.div>
       <motion.div 
         className={type === 'projects' ? 'planets' : 'sun'}
-        style={{y: yBg}}
+        style={{y: yBg }}
       ></motion.div>
       <motion.div 
         className="stars"
