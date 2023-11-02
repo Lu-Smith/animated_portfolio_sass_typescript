@@ -5,9 +5,25 @@
 
     .textContainer {
         flex: 1;
+        align-self: flex-end;
+        @include flex(center, row);
+        gap: 20px;
+
+        p {
+            font-weight: 200;
+        }
+
+        hr {
+            width: 400px;
+            border: none;
+            border-top: 0.5px solid #aaa6a6;
+
+        }
     }
 
     .titleContainer {
+        flex: 2;
+        
         .title {
             img {
                 width: 300px;
@@ -16,7 +32,10 @@
                 object-fit: cover;
             }
         }
+    }
 
+    .listContainer {
+        flex: 2;
     }
 
 
