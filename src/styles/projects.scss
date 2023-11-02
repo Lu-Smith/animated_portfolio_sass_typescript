@@ -65,8 +65,23 @@
 
         .box {
             padding: 50px;
-            border: $primary-border
+            border: $primary-border;
+            @include flex(center, column);
         }
+
+        button {
+            padding: 10px;
+            background-color: $focus-color;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        p {
+            margin: 20px 0;
+        }
+
+
     }
 
 
