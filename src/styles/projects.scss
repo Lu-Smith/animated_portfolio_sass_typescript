@@ -11,12 +11,15 @@
 
         p {
             font-weight: 200;
+            font-size: 20px;
+            color: $third-color;
+            text-align: right;
         }
 
         hr {
             width: 400px;
             border: none;
-            border-top: 0.5px solid #aaa6a6;
+            border-top: 0.5px solid $third-color;
 
         }
     }
