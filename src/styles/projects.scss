@@ -1,11 +1,13 @@
 .Projects {
     background: $primary-background;
     height: 100%;
+    @include flex(space-between, column);
 
-
+    .textContainer {
+        flex: 1;
+    }
 
     .titleContainer {
-
         .title {
             img {
                 width: 300px;
