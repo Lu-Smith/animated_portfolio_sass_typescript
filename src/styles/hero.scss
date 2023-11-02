@@ -28,7 +28,7 @@
             .buttons {
                 button {
                     padding: 20px;
-                    border: 1px solid $primary-color;
+                    border: $button-border;
                     border-radius: 10px;
                     background-color: transparent;
                     color: $primary-color;
