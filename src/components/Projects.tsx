@@ -2,10 +2,33 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Dream from '../assets/dream.png';
 
+const variants = {
+    intial: {
+        x: -500,
+        y: 100,
+        opacity: 0,
+    },
+    animate: {
+        x: 0,
+        y: 0,
+        opacity: 1,
+        transition: {
+            duration: 1,
+            staggerChildren: 0.1,
+        }
+    }
+}
+
 const Projects = () => {
   return (
-    <motion.div className='Projects'>
-        <motion.div className="textContainer">
+    <motion.div 
+    className='Projects' 
+    variants={variants} 
+    initial='intial'
+    animate='animate'>
+        <motion.div 
+        className="textContainer"  
+        variants={variants}>
             <p>
                 I focus on bringing new ideas to life
                   <br /> and creating art!
@@ -22,7 +45,9 @@ const Projects = () => {
                 <button>What I Do?</button>
             </div>
         </motion.div>
-        <motion.div className="listContainer">
+        <motion.div 
+        className="listContainer"
+        variants={variants} >
             <motion.div className="box" whileHover={{background: 'lightgrey', color: 'black'}}>
                 <h2>Project</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda culpa, odio similique reiciendis animi debitis at necessitatibus explicabo excepturi voluptate dignissimos ipsa. Eos modi excepturi voluptatum ullam quos ea culpa?</p>
