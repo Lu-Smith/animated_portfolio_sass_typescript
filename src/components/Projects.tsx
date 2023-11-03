@@ -2,7 +2,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Dream from '../assets/dream.png';
 
-
 const Projects = () => {
   return (
     <motion.div className='Projects'>
@@ -24,21 +23,21 @@ const Projects = () => {
             </div>
         </motion.div>
         <motion.div className="listContainer">
-            <div className="box">
+            <motion.div className="box" whileHover={{background: 'lightgrey', color: 'black'}}>
                 <h2>Project</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda culpa, odio similique reiciendis animi debitis at necessitatibus explicabo excepturi voluptate dignissimos ipsa. Eos modi excepturi voluptatum ullam quos ea culpa?</p>
                 <button>Go</button>
-            </div>
-            <div className="box">
+            </motion.div>
+            <motion.div className="box" whileHover={{background: 'lightgrey', color: 'black'}}>
                 <h2>Project</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda culpa, odio similique reiciendis animi debitis at necessitatibus explicabo excepturi voluptate dignissimos ipsa. Eos modi excepturi voluptatum ullam quos ea culpa?</p>
                 <button>Go</button>
-            </div>
-            <div className="box">
+            </motion.div>
+            <motion.div className="box" whileHover={{background: 'lightgrey', color: 'black'}}>
                 <h2>Project</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda culpa, odio similique reiciendis animi debitis at necessitatibus explicabo excepturi voluptate dignissimos ipsa. Eos modi excepturi voluptatum ullam quos ea culpa?</p>
                 <button>Go</button>
-            </div>
+            </motion.div>
         </motion.div>
     </motion.div>
   )
