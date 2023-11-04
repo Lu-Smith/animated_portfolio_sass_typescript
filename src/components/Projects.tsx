@@ -1,5 +1,5 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React, { useRef } from 'react';
+import { motion, useInView} from 'framer-motion';
 import Dream from '../assets/dream.png';
 
 const variants = {
@@ -20,12 +20,18 @@ const variants = {
 }
 
 const Projects = () => {
+
+    const ref = useRef<HTMLDivElement>(null)
+
+    const isInView = useInView(ref, { margin: "-100px"})
+
   return (
     <motion.div 
     className='Projects' 
     variants={variants} 
     initial='intial'
-    whileInView='animate'>
+    ref={ref}
+    animate={isInView && "animate"}>
         <motion.div 
         className="textContainer"  
         variants={variants}>
@@ -38,10 +44,10 @@ const Projects = () => {
         <motion.div className="titleContainer">
             <div className="title">
                 <img src={Dream} alt="dream" />
-                <h1><strong>Unique</strong> Ideas</h1>
+                <h1><motion.strong whileHover={{color: "#e08f16"}}>Unique</motion.strong> Ideas</h1>
             </div>
             <div className="title">
-                <h1><strong>For Your</strong> Buisness</h1>
+                <h1><motion.strong whileHover={{color: "#e08f16"}}>For Your</motion.strong> Buisness</h1>
                 <button>What I Do?</button>
             </div>
         </motion.div>
