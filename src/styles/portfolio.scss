@@ -22,6 +22,11 @@
        height: 100%;
 
        .wrapper {
+            max-width: 1366px;
+            height: 100%;
+            margin: auto;
+            display: flex;
+            gap: 50px;
 
             img {
                 flex: 1;
