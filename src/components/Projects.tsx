@@ -25,7 +25,7 @@ const Projects = () => {
     className='Projects' 
     variants={variants} 
     initial='intial'
-    animate='animate'>
+    whileInView='animate'>
         <motion.div 
         className="textContainer"  
         variants={variants}>
