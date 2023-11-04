@@ -1,5 +1,5 @@
 import React, { useRef } from 'react'
-import { motion, useScroll, useSpring } from 'framer-motion';
+import { motion, useScroll, useSpring, useTransform } from 'framer-motion';
 import Image1 from '../assets/12R.jpg';
 import Image2 from '../assets/16.jpg';
 import Image3 from '../assets/10R.jpg';
@@ -43,15 +43,25 @@ const Single = ({ title, src, alt, id }: ItemType) => {
 
     const ref = useRef<HTMLDivElement>(null);
 
+    const { scrollYProgress } = useScroll({
+        target: ref,
+    });
+
+    const y = useTransform(
+        scrollYProgress,
+        [0,1],
+        [-300, 300],
+    );
+
     return (
         <section ref={ ref }>
             <div className="container">
                 <img src={src} alt={alt} />
-                <div className="text">
+                <motion.div className="text" style={{ y }}>
                     <h2>{title}</h2>
                     <p>{alt}</p>
                     <button>See Demo</button>
-                </div>
+                </motion.div>
             </div>
         </section>
     )
