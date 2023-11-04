@@ -56,12 +56,14 @@ const Single = ({ title, src, alt, id }: ItemType) => {
     return (
         <section ref={ ref }>
             <div className="container">
-                <img src={src} alt={alt} />
-                <motion.div className="text" style={{ y }}>
-                    <h2>{title}</h2>
-                    <p>{alt}</p>
-                    <button>See Demo</button>
+                <div className="wrapper">
+                    <img src={src} alt={alt} />
+                    <motion.div className="textContainer" style={{ y }}>
+                        <h2>{title}</h2>
+                        <p>{alt}</p>
+                        <button>See Demo</button>
                 </motion.div>
+                </div>
             </div>
         </section>
     )
