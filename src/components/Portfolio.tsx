@@ -1,6 +1,13 @@
 import React from 'react'
 
-const items = [
+interface ItemType {
+    title: string;
+    src: string;
+    alt: string;
+    id: number;
+}
+
+const items: ItemType[] = [
     {
         id: 1,
         title: 'React',
@@ -27,9 +34,21 @@ const items = [
     }
 ]
 
+const Single = ({ title, src, alt, id }: ItemType) => {
+    return (
+        <section>
+            {title}
+        </section>
+    )
+}
+
 const Portfolio = () => {
   return (
-    <div className='Portfolio'>Portfolio</div>
+    <div className='Portfolio'>
+        {items.map(item => {
+            return <Single {...item} key={item.id} />
+        })}
+    </div>
   )
 }
 
