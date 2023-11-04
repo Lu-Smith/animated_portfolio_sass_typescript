@@ -1,5 +1,9 @@
 import React, { useRef } from 'react'
 import { motion, useScroll, useSpring } from 'framer-motion';
+import Image1 from '../assets/12R.jpg';
+import Image2 from '../assets/16.jpg';
+import Image3 from '../assets/10R.jpg';
+import Image4 from '../assets/13.jpg';
 
 interface ItemType {
     title: string;
@@ -12,33 +16,43 @@ const items: ItemType[] = [
     {
         id: 1,
         title: 'React',
-        src: '../assets/12R.jpg',
+        src: Image1,
         alt: 'React projects: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda culpa, odio similique reiciendis animi debitis at necessitatibus explicabo excepturi voluptate dignissimos ipsa. Eos modi excepturi voluptatum ullam quos ea culpa?',
     },
     {
         id: 2,
         title: 'JavaScriprt',
-        src: '../assets/16.jpg',
+        src: Image2,
         alt: 'React projects: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda culpa, odio similique reiciendis animi debitis at necessitatibus explicabo excepturi voluptate dignissimos ipsa. Eos modi excepturi voluptatum ullam quos ea culpa?',
     },
     {
         id: 3,
         title: 'Vue',
-        src: '../assets/10R.jpg',
+        src: Image3,
         alt: 'React projects: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda culpa, odio similique reiciendis animi debitis at necessitatibus explicabo excepturi voluptate dignissimos ipsa. Eos modi excepturi voluptatum ullam quos ea culpa?',
     },
     {
         id: 4,
         title: 'Games',
-        src: '../assets/13.jpg',
+        src: Image4,
         alt: 'React projects: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda culpa, odio similique reiciendis animi debitis at necessitatibus explicabo excepturi voluptate dignissimos ipsa. Eos modi excepturi voluptatum ullam quos ea culpa?',
     }
 ]
 
 const Single = ({ title, src, alt, id }: ItemType) => {
+
+    const ref = useRef<HTMLDivElement>(null);
+
     return (
-        <section>
-            {title}
+        <section ref={ ref }>
+            <div className="container">
+                <img src={src} alt={alt} />
+                <div className="text">
+                    <h2>{title}</h2>
+                    <p>{alt}</p>
+                    <button>See Demo</button>
+                </div>
+            </div>
         </section>
     )
 }
