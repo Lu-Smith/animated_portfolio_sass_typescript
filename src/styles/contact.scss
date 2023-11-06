@@ -27,7 +27,7 @@
         position: relative;
 
         .phoneSvg {
-            background-color: $focus-color;
+            stroke: $focus-color;
             position: absolute;
             margin: auto;
         }
