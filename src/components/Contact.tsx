@@ -18,22 +18,28 @@ const variants = {
 
 const Contact = () => {
   return (
-    <motion.div className='Contact'>
-        <div className="textContainer">
-            <h1>Let's work together</h1>
-            <div className="item">
+    <motion.div 
+    className='Contact'
+    variants={variants}
+    initial='initial'
+    whileInView='animate'>
+        <motion.div 
+        className="textContainer"
+        variants={variants}>
+            <motion.h1     variants={variants}>Let's work together</motion.h1>
+            <motion.div className="item" variants={variants}>
                 <h2>Mail</h2>
                 <span>lunasmithart@gmail.com</span>
-            </div>
-            <div className="item">
+            </motion.div>
+            <motion.div className="item" variants={variants}>
                 <h2>Address</h2>
                 <span>Edinburgh, Scotland 🦄</span>
-            </div>
-            <div className="item">
+            </motion.div>
+            <motion.div className="item" variants={variants}>
                 <h2>Phone</h2>
                 <span>07863734874</span>
-            </div>
-        </div>
+            </motion.div>
+        </motion.div>
         <div className="formContainer">
             <form action="">
                 <input type="text" required placeholder='Name'/>
