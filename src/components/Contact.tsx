@@ -19,7 +19,12 @@ const Contact = () => {
             </div>
         </div>
         <div className="formContainer">
-
+            <form action="">
+                <input type="text" required placeholder='Name'/>
+                <input type="email" required placeholder='Email'/>
+                <textarea placeholder='Message'rows={8}></textarea>
+                <button>Submit</button>
+            </form>
         </div>
     </div>
   )
