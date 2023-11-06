@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const variants = {
-    intial: {
+    initial: {
         y: 500,
         opacity: 0,
     },
@@ -26,7 +26,7 @@ const Contact = () => {
         <motion.div 
         className="textContainer"
         variants={variants}>
-            <motion.h1     variants={variants}>Let's work together</motion.h1>
+            <motion.h1 variants={variants}>Let's work together</motion.h1>
             <motion.div className="item" variants={variants}>
                 <h2>Mail</h2>
                 <span>lunasmithart@gmail.com</span>
