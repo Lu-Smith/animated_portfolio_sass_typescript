@@ -6,6 +6,7 @@ import Parallax from './components/Parallax';
 import Projects from './components/Projects';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
+import Cursor from './components/Cursor';
 
 function App() {
   return (
@@ -26,12 +27,10 @@ function App() {
       <section >
         <Portfolio />
       </section>
-      <section id='About'>Parallax</section>
-      <section >About</section>
-      <section id='Contact'>Parallax</section>
       <section >
         <Contact />
       </section>
+      <Cursor />
     </div>
   );
 }
