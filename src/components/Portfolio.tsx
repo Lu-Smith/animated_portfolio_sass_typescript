@@ -54,17 +54,17 @@ const Single = ({ title, src, alt, id }: ItemType) => {
     );
 
     return (
-        <section ref={ ref }>
+        <section>
             <div className="container">
                 <div className="wrapper">
-                    <div className="imageContainer">
+                    <div className="imageContainer" ref={ ref }>
                         <img src={src} alt={alt} />
                     </div>
                     <motion.div className="textContainer" style={{ y }}>
                         <h2>{title}</h2>
                         <p>{alt}</p>
                         <button>See Demo</button>
-                </motion.div>
+                    </motion.div>
                 </div>
             </div>
         </section>
@@ -76,8 +76,7 @@ const Portfolio = () => {
     const ref = useRef<HTMLDivElement>(null);
 
     const { scrollYProgress } = useScroll({
-        target: ref, 
-        offset: ["end end", "start start"],
+        target: ref,
     });
 
     const scaleX = useSpring( scrollYProgress, {
