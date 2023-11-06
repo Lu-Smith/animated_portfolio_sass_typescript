@@ -1,8 +1,24 @@
-import React from 'react'
+import React from 'react';
+import { motion } from 'framer-motion';
+
+const variants = {
+    intial: {
+        y: 500,
+        opacity: 0,
+    },
+    animate: {
+        y: 0,
+        opacity: 1,
+        transition: {
+            duration: 0.5,
+            staggerChildren: 0.1,
+        }
+    }
+};
 
 const Contact = () => {
   return (
-    <div className='Contact'>
+    <motion.div className='Contact'>
         <div className="textContainer">
             <h1>Let's work together</h1>
             <div className="item">
@@ -26,7 +42,7 @@ const Contact = () => {
                 <button>Submit</button>
             </form>
         </div>
-    </div>
+    </motion.div>
   )
 }
 
