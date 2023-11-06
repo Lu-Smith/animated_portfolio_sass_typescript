@@ -50,7 +50,7 @@ const Single = ({ title, src, alt, id }: ItemType) => {
     const y = useTransform(
         scrollYProgress,
         [0,1],
-        [-300, 300],
+        [-500, 500],
     );
 
     return (
