@@ -45,6 +45,12 @@
                     margin-right: 20px;
                     cursor: pointer;
                     font-weight: 300;
+                    transition: 200ms all ease-in-out;
+
+                    &:hover {
+                        color: $focus-color;
+                        border-color: $focus-color;
+                    }
                 }
             }
 
@@ -82,5 +88,10 @@
         color: $background-color;
         width: 50%;
         font-weight: bold;
+
+        @include mobile {
+            font-size: 20vh;
+            bottom: -20px;
+        }
     }
 }
