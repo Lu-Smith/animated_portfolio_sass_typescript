@@ -5,4 +5,8 @@
     border:$cursor-border;
     position: fixed;
     z-index: 999;
+
+    @include mobile {
+        display: none;
+    }
 }
