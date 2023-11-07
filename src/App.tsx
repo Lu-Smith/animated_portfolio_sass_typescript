@@ -14,9 +14,9 @@ function App() {
       <Cursor />
       <section id='Home'>
         <NavBar />
-        <Hero />
+        {/* <Hero /> */}
       </section>
-      <section id='Projects'>
+      {/* <section id='Projects'>
         <Parallax type='projects' />
       </section>
       <section>
@@ -30,7 +30,7 @@ function App() {
       </section>
       <section >
         <Contact />
-      </section>
+      </section> */}
     </div>
   );
 }
