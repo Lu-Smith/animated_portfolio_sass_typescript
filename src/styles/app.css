@@ -30,13 +30,16 @@
   color: rgb(37, 37, 37);
 }
 .SideBar .container {
+  z-index: 997;
   position: fixed;
   top: 0;
   left: 0;
-  width: 300px;
+  bottom: 0;
+  width: 400px;
   background-color: rgb(241, 236, 245);
 }
 .SideBar .container .Links {
+  z-index: 998;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -47,9 +50,13 @@
   gap: 20px;
 }
 .SideBar .container .Links a {
-  font-size: 35px;
+  font-size: 30px;
+}
+.SideBar .container .Links a:hover {
+  color: #e08f16;
 }
 .SideBar button {
+  z-index: 999;
   position: fixed;
   top: 0;
   left: 0;
@@ -58,18 +65,331 @@
   border-radius: 50%;
   background-color: transparent;
   border: none;
+  cursor: pointer;
+}
+
+.Hero {
+  height: calc(100vh - 100px);
+  background: linear-gradient(180deg, rgb(0, 0, 2), rgb(2, 1, 27));
+  overflow: hidden;
+  position: relative;
+}
+.Hero .wrapper {
+  max-width: 1366px;
+  height: 100%;
+  margin: auto;
+}
+.Hero .wrapper .textContainer {
+  width: 50%;
+  height: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  gap: 2px;
+  gap: 40px;
+}
+.Hero .wrapper .textContainer h2 {
+  font-size: 30px;
+  letter-spacing: 10px;
+  color: rgb(37, 37, 37);
+}
+.Hero .wrapper .textContainer h1 {
+  font-size: 88px;
+}
+.Hero .wrapper .textContainer .buttons button {
+  padding: 20px;
+  border: 1px solid rgb(226, 222, 211);
+  border-radius: 10px;
+  background-color: transparent;
+  color: rgb(226, 222, 211);
+  margin-right: 20px;
+  cursor: pointer;
+  font-weight: 300;
+}
+.Hero .wrapper .textContainer img {
+  width: 50px;
+}
+.Hero .imageContainer {
+  height: 100%;
+  position: absolute;
+  top: 5%;
+  right: 15%;
+}
+.Hero .slidingTextContainer {
+  position: absolute;
+  font-size: 50vh;
+  bottom: -120px;
+  white-space: nowrap;
+  color: rgba(9, 8, 73, 0.2);
+  width: 50%;
+  font-weight: bold;
+}
+
+.Parallax {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+.Parallax h1 {
+  font-size: 100px;
+}
+.Parallax .mountains {
+  background-image: url("../assets/mountains.png");
+  background-size: cover;
+  background-position: bottom;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 3;
+}
+.Parallax .planets {
+  background-image: url("../assets/planets.png");
+  background-size: cover;
+  background-position: bottom;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+}
+.Parallax .sun {
+  background-image: url("../assets/sun.png");
+  background-size: cover;
+  background-position: bottom;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+}
+.Parallax .stars {
+  background-image: url("../assets/stars.png");
+  background-size: cover;
+  background-position: bottom;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+.Projects {
+  background: rgb(2, 1, 27);
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+.Projects .textContainer {
+  flex: 1;
+  align-self: flex-end;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+.Projects .textContainer p {
+  font-weight: 200;
+  font-size: 20px;
+  color: #aaa6a6;
+  text-align: right;
+}
+.Projects .textContainer hr {
+  width: 400px;
+  border: none;
+  border-top: 0.5px solid #aaa6a6;
+}
+.Projects .titleContainer {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.Projects .titleContainer .title {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.Projects .titleContainer .title img {
+  width: 300px;
+  height: 100px;
+  border-radius: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Projects .titleContainer .title h1 {
+  font-size: 96px;
+  font-weight: 100;
+}
+.Projects .titleContainer .title button {
+  width: 300px;
+  height: 100px;
+  border-radius: 50px;
+  background-color: #e08f16;
+  border: none;
+  font-size: 24px;
   cursor: pointer;
 }
-.SideBar button span {
-  background-color: rgb(226, 222, 211);
-  width: 20px;
-  height: 4px;
-  border-radius: 5%;
+.Projects .listContainer {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  max-width: 1366px;
+  margin: auto;
+}
+.Projects .listContainer .box {
+  padding: 50px;
+  border: 0.5px solid #aaa6a6;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.Projects .listContainer button {
+  padding: 10px;
+  background-color: #e08f16;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+.Projects .listContainer p {
+  margin: 20px 0;
+}
+
+.Portfolio {
+  position: relative;
+}
+.Portfolio .progress {
+  position: sticky;
+  top: 0;
+  left: 0;
+  padding-top: 50px;
+  text-align: center;
+  color: #e08f16;
+  font-size: 36px;
+}
+.Portfolio .progress .progressBar {
+  height: 10px;
+  background-color: rgb(241, 236, 245);
+}
+.Portfolio .container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.Portfolio .container .wrapper {
+  max-width: 1366px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+}
+.Portfolio .container .wrapper .imageContainer {
+  flex: 1;
+  height: 50%;
+}
+.Portfolio .container .wrapper .imageContainer img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Portfolio .container .wrapper .textContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.Portfolio .container .wrapper .textContainer h2 {
+  font-size: 72px;
+}
+.Portfolio .container .wrapper .textContainer p {
+  color: #aaa6a6;
+  font-size: 20px;
+}
+.Portfolio .container .wrapper .textContainer button {
+  background-color: #e08f16;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  width: 200px;
+  cursor: pointer;
+}
+
+.Contact {
+  height: 100%;
+  max-width: 1366px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.Contact .textContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.Contact .textContainer h1 {
+  font-size: 100px;
+  line-height: 88px;
+}
+.Contact .textContainer span {
+  font-weight: 300;
+}
+.Contact .formContainer {
+  flex: 1;
+  position: relative;
+}
+.Contact .formContainer .phoneSvg {
+  stroke: #e08f16;
+  position: absolute;
+  margin: auto;
+  z-index: -1;
+}
+.Contact .formContainer form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.Contact .formContainer form input, .Contact .formContainer form textarea {
+  padding: 20px;
+  background-color: transparent;
+  border: 1px solid rgb(226, 222, 211);
+  border-radius: 5px;
+  color: rgb(226, 222, 211);
+}
+.Contact .formContainer form button {
+  padding: 20px;
+  border: none;
+  background-color: #e08f16;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.Cursor {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 3px solid #e08f16;
+  position: fixed;
+  z-index: 999;
 }
 
 html {
