@@ -4,7 +4,7 @@ import Dream from '../assets/dream.png';
 
 const variants = {
     intial: {
-        x: -500,
+        x: -300,
         y: 100,
         opacity: 0,
     },

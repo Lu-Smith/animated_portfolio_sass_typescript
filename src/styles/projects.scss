@@ -9,6 +9,12 @@
         @include flex(center, row);
         gap: 20px;
 
+        @include mobile {
+            align-self: center;
+            text-align: center;
+            flex-direction: column;
+        }
+
         p {
             font-weight: 200;
             font-size: 20px;
@@ -21,28 +27,50 @@
             border: none;
             border-top: $primary-border;
 
+            @include mobile {
+                width: 300px;
+            }
         }
     }
 
     .titleContainer {
         flex: 2;
         @include flex(center, column);
+
+        @include mobile {
+            width: 100%;
+        }
         
         .title {
             display: flex;
             align-items: center;
             gap: 50px;
 
+            @include mobile {
+                flex-direction: column;
+                text-align: center;
+                gap: 20px;
+            }
+
             img {
                 width: 300px;
                 height: 100px;
                 border-radius: 50px;
                 object-fit: cover;
+
+                @include mobile {
+                    width: 200px;
+                    height: 50px;
+                }
             }
 
             h1 {
                 font-size: 96px;
                 font-weight: 100;
+
+                @include mobile {
+                    font-size: 22px;
+                }
             }
 
            button {
@@ -53,6 +81,12 @@
             border: none;
             font-size: 24px;
             cursor: pointer;
+
+            @include mobile {
+                width: 150px;
+                height: 50px;
+                font-size: 14px;
+            }
            }
         }
     }
@@ -63,10 +97,29 @@
         max-width: 1366px;
         margin: auto;
 
+        @include mobile {
+            flex-direction: column;
+            width: 100%;
+        }
+
         .box {
             padding: 50px;
             border: $primary-border;
             @include flex(center, column);
+
+            @include mobile {
+                border: none;
+                padding: 30px;
+            }
+
+            p {
+
+                margin: 20px 0;
+
+                @include mobile {
+                    display: none;
+                }
+            }
         }
 
         button {
@@ -75,15 +128,16 @@
             border: none;
             cursor: pointer;
             width: 100%;
+
+            @include mobile {
+                margin-top: 20px;
+                background-color: transparent;
+                border: $cursor-border;
+                border-radius: 5px;
+                color: $primary-color;
+                width: 100px;
+                padding: 7px;
+            }
         }
-
-        p {
-            margin: 20px 0;
-        }
-
-
     }
-
-
-
 }
