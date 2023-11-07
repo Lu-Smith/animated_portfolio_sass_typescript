@@ -11,6 +11,7 @@ import Cursor from './components/Cursor';
 function App() {
   return (
     <div className="App">
+      <Cursor />
       <section id='Home'>
         <NavBar />
         <Hero />
@@ -30,7 +31,6 @@ function App() {
       <section >
         <Contact />
       </section>
-      <Cursor />
     </div>
   );
 }
