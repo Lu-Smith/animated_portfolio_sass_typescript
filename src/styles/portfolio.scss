@@ -102,10 +102,6 @@
                     padding: 10px;
                     width: 200px;
                     cursor: pointer;
-
-                    @include mobile {
-                        border-bottom: $cursor-border;
-                    }
                 }
             }
         }
