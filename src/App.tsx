@@ -16,10 +16,10 @@ function App() {
         <NavBar />
         <Hero />
       </section>
-      {/* <section id='Projects'>
+      <section id='Projects'>
         <Parallax type='projects' />
       </section>
-      <section>
+      {/* <section>
         <Projects />
       </section>
       <section id='Portfolio'>
