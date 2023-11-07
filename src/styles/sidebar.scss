@@ -12,6 +12,10 @@
         width: 400px;
         background-color: $secondary-background;
 
+        @include mobile {
+            width: 200px;
+        }
+
         .Links {
             z-index: 998;
             position: absolute;
@@ -22,6 +26,10 @@
     
             a {
                 font-size: 30px;
+
+                @include mobile {
+                    font-size: 20px;
+                }
 
                 &:hover {
                     color: $focus-color;
