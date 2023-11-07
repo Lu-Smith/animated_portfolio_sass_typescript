@@ -137,6 +137,12 @@
                 color: $primary-color;
                 width: 100px;
                 padding: 7px;
+                color: $focus-color;
+                transition: 200ms all ease-in-out;
+
+                &:hover {
+                    background-color: $primary-background;
+                }
             }
         }
     }
