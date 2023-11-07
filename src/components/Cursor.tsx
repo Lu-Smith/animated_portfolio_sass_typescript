@@ -16,14 +16,11 @@ const Cursor = () => {
             window.removeEventListener("mousemove", mouseMove);
         }
     }, []);
-    
-    console.log(position);
   
     return (
     <motion.div 
     className='Cursor'
     animate={{ x: position.x, y: position.y}}>
-        Cursor
     </motion.div>
   )
 }
