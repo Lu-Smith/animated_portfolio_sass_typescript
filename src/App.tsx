@@ -14,7 +14,7 @@ function App() {
       <Cursor />
       <section id='Home'>
         <NavBar />
-        {/* <Hero /> */}
+        <Hero />
       </section>
       {/* <section id='Projects'>
         <Parallax type='projects' />
