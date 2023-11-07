@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { motion } from 'framer-motion';
 
 const Cursor = () => {
 
@@ -14,12 +15,16 @@ const Cursor = () => {
         return () => {
             window.removeEventListener("mousemove", mouseMove);
         }
-    });
+    }, []);
     
     console.log(position);
   
     return (
-    <div className='Cursor'>Cursor</div>
+    <motion.div 
+    className='Cursor'
+    animate={{ x: position.x, y: position.y}}>
+        Cursor
+    </motion.div>
   )
 }
 
